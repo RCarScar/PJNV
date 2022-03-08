@@ -64,7 +64,7 @@ public class Event1 : MonoBehaviour
             }
         }
         //if the text is this,
-        else if (TMPComponent.text == "The party stops at a state park and searches for supplies. How many times do you want your party to run over the area to search for supplies?")
+        /*else if (TMPComponent.text == "The party stops at a state park and searches for supplies. How many times do you want your party to run over the area to search for supplies?")
         {
             //if you press button 1,
             if (this.gameObject == buttons[0])
@@ -99,6 +99,6 @@ public class Event1 : MonoBehaviour
             //if not any of the above,
             else
                 Debug.Log("Error");
-        }
+        }*/
     }
 }
