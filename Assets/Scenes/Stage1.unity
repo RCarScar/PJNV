@@ -123,6 +123,88 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &11311448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 11311450}
+  - component: {fileID: 11311449}
+  m_Layer: 0
+  m_Name: Circle
+  m_TagString: check
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &11311449
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11311448}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &11311450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11311448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.33, y: -0.46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &42383335
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +218,7 @@ GameObject:
   - component: {fileID: 42383338}
   - component: {fileID: 42383337}
   m_Layer: 5
-  m_Name: Select
+  m_Name: Lock Character Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,9 +266,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.40392157}
+    m_PressedColor: {r: 0, g: 0, b: 0, a: 0.53333336}
+    m_SelectedColor: {r: 0, g: 0, b: 0, a: 0.2627451}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -231,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.09803922}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -290,8 +372,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 570.7, y: -177.8}
-  m_SizeDelta: {x: 2002, y: 756.3}
+  m_AnchoredPosition: {x: 778.8, y: -245.7}
+  m_SizeDelta: {x: 2701, y: 1047.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &62441896
 MonoBehaviour:
@@ -313,7 +395,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-dumb idot child\n-sucks \n-bad\n-actually really bad"
+  m_text: His slimy appearance is decieving, but the truth is, he's really small.
+    he is a slimy bugaroo, a true menace to the world.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -402,8 +485,8 @@ GameObject:
   - component: {fileID: 70824962}
   - component: {fileID: 70824961}
   m_Layer: 5
-  m_Name: Stats
-  m_TagString: Untagged
+  m_Name: VehicleCondition
+  m_TagString: VC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -424,7 +507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.09999, y: 213.99997}
+  m_AnchoredPosition: {x: -291.10004, y: 324}
   m_SizeDelta: {x: 381.53, y: 77.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70824961
@@ -447,7 +530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'VehicleCondition:'
+  m_text: 'VehicleCondition: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -558,8 +641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1079.4, y: 543.3}
-  m_SizeDelta: {x: 984.62, y: 642.7}
+  m_AnchoredPosition: {x: 1436.9, y: 709.25}
+  m_SizeDelta: {x: 1322.7, y: 860.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108346722
 MonoBehaviour:
@@ -581,13 +664,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'William David
+  m_text: 'Crystal
 
-    -dumb
-
-    -idot
-
-    -child'
+    head full of crystal, he likes to reflect on his actions,
+    perhaps people see theirselves in him when they see him...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -677,7 +757,7 @@ GameObject:
   - component: {fileID: 205159607}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: te1
+  m_TagString: textas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,7 +801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to Continue
+  m_text: . . .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -881,36 +961,6 @@ Transform:
   m_Father: {fileID: 1449526283}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &368316619
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 368316620}
-  m_Layer: 0
-  m_Name: Introduction
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &368316620
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368316619}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.30088937, y: 0.116897106, z: -679.7467}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1086839485}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &382131613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,8 +1055,8 @@ GameObject:
   - component: {fileID: 382970665}
   - component: {fileID: 382970664}
   m_Layer: 5
-  m_Name: Stats (1)
-  m_TagString: Untagged
+  m_Name: PublicOpinion
+  m_TagString: PO
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1027,7 +1077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 145.00002, y: 213.99998}
+  m_AnchoredPosition: {x: -4.000038, y: 324}
   m_SizeDelta: {x: 381.53, y: 77.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382970664
@@ -1140,7 +1190,7 @@ GameObject:
   - component: {fileID: 404960788}
   - component: {fileID: 404960787}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1229,88 +1279,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &423239875
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 423239877}
-  - component: {fileID: 423239876}
-  m_Layer: 0
-  m_Name: Game Jam Military Agent Sprite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &423239876
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423239875}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a80245c517955fa418fa00ad90c64fa5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.13, y: 8.45}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &423239877
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423239875}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3308893, y: 2.2968972, z: -679.7467}
-  m_LocalScale: {x: -0.3761829, y: 0.37618294, z: 0.37618294}
-  m_Children: []
-  m_Father: {fileID: 1086839485}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &435868390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,7 +1343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1449526283}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &479631912
 GameObject:
@@ -1390,7 +1358,7 @@ GameObject:
   - component: {fileID: 479631914}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: te2
+  m_TagString: textas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1434,7 +1402,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to Continue
+  m_text: . . .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1558,7 +1526,7 @@ GameObject:
   - component: {fileID: 566294902}
   - component: {fileID: 566294901}
   m_Layer: 5
-  m_Name: a_2st char
+  m_Name: Character Card 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1598,6 +1566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fudger: {fileID: 1165560323}
   LoserImoogas: {fileID: 1808773048}
+  removera: {fileID: 1421961421}
+  removera2: {fileID: 11311448}
   Losertaxes: {fileID: 1106457530}
   ree: []
 --- !u!114 &566294902
@@ -1707,7 +1677,7 @@ GameObject:
   - component: {fileID: 567542663}
   - component: {fileID: 567542662}
   m_Layer: 5
-  m_Name: ChooseChar
+  m_Name: ChooseCharacterText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1787,7 +1757,7 @@ RectTransform:
   m_Children:
   - {fileID: 1664269178}
   m_Father: {fileID: 1449526283}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1828,8 +1798,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1079.4, y: 543.3}
-  m_SizeDelta: {x: 984.62, y: 642.7}
+  m_AnchoredPosition: {x: 1457, y: 718.63}
+  m_SizeDelta: {x: 1344.6, y: 881.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584968982
 MonoBehaviour:
@@ -1851,13 +1821,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'James Robert
+  m_text: 'C. H. A. D.
 
-    -dumb
+    Communicative
 
-    -idot
+    Hacking
 
-    -child'
+    Aid
+
+    DhocolateChipMuffin'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1949,7 +1921,7 @@ GameObject:
   - component: {fileID: 610261795}
   m_Layer: 5
   m_Name: Button 3
-  m_TagString: 3
+  m_TagString: buton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1971,7 +1943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: -150}
+  m_AnchoredPosition: {x: 300, y: -225}
   m_SizeDelta: {x: 256.26, y: 54.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610261792
@@ -1996,7 +1968,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2018,18 +1990,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2041880755}
-        m_TargetAssemblyTypeName: Event1, Assembly-CSharp
-        m_MethodName: loser
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 610261795}
         m_TargetAssemblyTypeName: SixButton, Assembly-CSharp
         m_MethodName: button3
@@ -2092,46 +2052,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9bbafa24990b042a6c255ab747f8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 999294775}
-  - {fileID: 2076142051}
-  - {fileID: 610261790}
-  - {fileID: 1025743700}
-  - {fileID: 1255934883}
-  - {fileID: 1143650175}
-  texts:
-  - {fileID: 205159605}
-  - {fileID: 479631912}
-  - {fileID: 1375756471}
-  - {fileID: 715008816}
-  - {fileID: 1041021500}
-  - {fileID: 1987030331}
-  TMP_Text_Button:
-  - {fileID: 205159607}
-  - {fileID: 479631914}
-  - {fileID: 1375756473}
-  - {fileID: 715008818}
-  - {fileID: 1041021502}
-  - {fileID: 1987030333}
-  TMPComponent: {fileID: 1868622698}
-  TextStrings: 
+  buttons: []
+  buttonstext: []
+  riskamount: 
+  stringtoint: 
+  texts: []
+  buttonchoices1:
+  - 1
+  - 0
+  - 2
+  buttonchoices2:
+  - 2
+  - 1
+  - 4
+  buttonchoices3:
+  - 3
+  - 3
+  - 6
+  buttonchoices4:
+  - 4
+  - 6
+  - 8
+  buttonchoices5:
+  - 5
+  - 9
+  - 24
+  buttonchoices6:
+  - 10
+  - 30
+  - 984
+  scenarios:
+  - You stop at a park to gather supplies, there are dangers, and the more you go
+    out is the more chance you have of dying, how many times do you go out to scavenge
+    for supplies?
+  - You stop at a motel to gather supplies, there are dangers, and the more you go
+    out is the higher chance you have of dying, but you will get more supplies than
+    any other trip you go on. How many times do you want to scaenge?
+  - You stop at a farm, and there are crops, but you are exposed to natural weather,
+    and that can cause lots of team damage, and the longer you stay is the more vehicle
+    damage you will take, how many hours do you want to stay to gather supplies?
+  MainText: {fileID: 1868622698}
   stage: 0
-  stage0: {fileID: 928055524}
-  stage1: {fileID: 1303601160}
-  stage2: {fileID: 2028881523}
-  stage3: {fileID: 368316619}
-  first: The party stops at a state park and searches for supplies. How many times
-    do you want your party to run over the area to search for supplies?
-  second: The party stops at a motel and your team enters a guest convenience store.
-    Do you want to gather supplies, or rob the store?
-  third: bad
-  fourth: child
-  fifth: literal loser
-  sixth: actual loser
-  seventh: nobody likes you
-  eighth: you're sad
-  ninth: bad.
-  done: 000000000000000000
+  VehicleCondition: 100
+  PO: 100
+  Supplies: 100
+  losars: []
+  loserettes: []
 --- !u!1 &677384937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,14 +2158,14 @@ MonoBehaviour:
   m_text: Lock Character
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 9ad269c99dcf42b7aedefd83dd5a7b9d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2279,7 +2245,7 @@ GameObject:
   - component: {fileID: 715008818}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: te4
+  m_TagString: textas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2323,7 +2289,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to Continue
+  m_text: . . .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2400,88 +2366,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715008816}
   m_CullTransparentMesh: 1
---- !u!1 &848034997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 848034999}
-  - component: {fileID: 848034998}
-  m_Layer: 0
-  m_Name: Game Jam Off Road Car
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &848034998
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848034997}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ff467bdad76d25b44a1424cd3dccf9c4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.7, y: 3.04}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &848034999
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 848034997}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.033071935, y: 1.8086277, z: -679.7467}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1086839485}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &873977342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,7 +2457,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: 05b097122f5d14f4fb8d96665ef6c244, type: 3}
-  m_Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2608,7 +2492,7 @@ GameObject:
   - component: {fileID: 909060739}
   - component: {fileID: 909060738}
   m_Layer: 0
-  m_Name: bobb (1)
+  m_Name: Character 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2783,36 +2667,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &928055524
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 928055525}
-  m_Layer: 0
-  m_Name: State Park
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &928055525
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928055524}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.30088937, y: 0.116897106, z: -679.7467}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1086839485}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991002587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,7 +2764,7 @@ GameObject:
   - component: {fileID: 999294780}
   m_Layer: 5
   m_Name: Button 1
-  m_TagString: 1
+  m_TagString: buton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2932,7 +2786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: -150}
+  m_AnchoredPosition: {x: -300, y: -225}
   m_SizeDelta: {x: 256.26, y: 54.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &999294777
@@ -2957,7 +2811,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2979,18 +2833,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2041880755}
-        m_TargetAssemblyTypeName: Event1, Assembly-CSharp
-        m_MethodName: loser
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 999294780}
         m_TargetAssemblyTypeName: SixButton, Assembly-CSharp
         m_MethodName: button1
@@ -3053,46 +2895,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9bbafa24990b042a6c255ab747f8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 999294775}
-  - {fileID: 2076142051}
-  - {fileID: 610261790}
-  - {fileID: 1025743700}
-  - {fileID: 1255934883}
-  - {fileID: 1143650175}
-  texts:
-  - {fileID: 205159605}
-  - {fileID: 479631912}
-  - {fileID: 1375756471}
-  - {fileID: 715008816}
-  - {fileID: 1041021500}
-  - {fileID: 1987030331}
-  TMP_Text_Button:
-  - {fileID: 205159607}
-  - {fileID: 479631914}
-  - {fileID: 1375756473}
-  - {fileID: 715008818}
-  - {fileID: 1041021502}
-  - {fileID: 1987030333}
-  TMPComponent: {fileID: 1868622698}
-  TextStrings: 
+  buttons: []
+  buttonstext: []
+  riskamount: 
+  stringtoint: 
+  texts: []
+  buttonchoices1:
+  - 1
+  - 0
+  - 2
+  buttonchoices2:
+  - 2
+  - 1
+  - 4
+  buttonchoices3:
+  - 3
+  - 3
+  - 6
+  buttonchoices4:
+  - 4
+  - 6
+  - 8
+  buttonchoices5:
+  - 5
+  - 9
+  - 24
+  buttonchoices6:
+  - 10
+  - 30
+  - 984
+  scenarios:
+  - You stop at a park to gather supplies, there are dangers, and the more you go
+    out is the more chance you have of dying, how many times do you go out to scavenge
+    for supplies?
+  - You stop at a motel to gather supplies, there are dangers, and the more you go
+    out is the higher chance you have of dying, but you will get more supplies than
+    any other trip you go on. How many times do you want to scaenge?
+  - You stop at a farm, and there are crops, but you are exposed to natural weather,
+    and that can cause lots of team damage, and the longer you stay is the more vehicle
+    damage you will take, how many hours do you want to stay to gather supplies?
+  MainText: {fileID: 1868622698}
   stage: 0
-  stage0: {fileID: 928055524}
-  stage1: {fileID: 1303601160}
-  stage2: {fileID: 2028881523}
-  stage3: {fileID: 368316619}
-  first: The party stops at a state park and searches for supplies. How many times
-    do you want your party to run over the area to search for supplies?
-  second: The party stops at a motel and your team enters a guest convenience store.
-    Do you want to gather supplies, or rob the store?
-  third: bad
-  fourth: child
-  fifth: literal loser
-  sixth: actual loser
-  seventh: nobody likes you
-  eighth: you're sad
-  ninth: bad.
-  done: 000000000000000000
+  VehicleCondition: 100
+  PO: 100
+  Supplies: 100
+  losars: []
+  loserettes: []
 --- !u!1 &1025743700
 GameObject:
   m_ObjectHideFlags: 0
@@ -3107,8 +2955,8 @@ GameObject:
   - component: {fileID: 1025743702}
   - component: {fileID: 1025743705}
   m_Layer: 5
-  m_Name: Button 4
-  m_TagString: 4
+  m_Name: Button 5
+  m_TagString: buton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3126,11 +2974,11 @@ RectTransform:
   m_Children:
   - {fileID: 715008817}
   m_Father: {fileID: 1437117756}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -225}
+  m_AnchoredPosition: {x: 0, y: -300}
   m_SizeDelta: {x: 256.26, y: 54.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1025743702
@@ -3155,7 +3003,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3177,21 +3025,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2041880755}
-        m_TargetAssemblyTypeName: Event1, Assembly-CSharp
-        m_MethodName: loser
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1025743705}
         m_TargetAssemblyTypeName: SixButton, Assembly-CSharp
-        m_MethodName: button4
+        m_MethodName: button5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3251,46 +3087,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9bbafa24990b042a6c255ab747f8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 999294775}
-  - {fileID: 2076142051}
-  - {fileID: 610261790}
-  - {fileID: 1025743700}
-  - {fileID: 1255934883}
-  - {fileID: 1143650175}
-  texts:
-  - {fileID: 205159605}
-  - {fileID: 479631912}
-  - {fileID: 1375756471}
-  - {fileID: 715008816}
-  - {fileID: 1041021500}
-  - {fileID: 1987030331}
-  TMP_Text_Button:
-  - {fileID: 205159607}
-  - {fileID: 479631914}
-  - {fileID: 1375756473}
-  - {fileID: 715008818}
-  - {fileID: 1041021502}
-  - {fileID: 1987030333}
-  TMPComponent: {fileID: 1868622698}
-  TextStrings: 
+  buttons: []
+  buttonstext: []
+  riskamount: 
+  stringtoint: 
+  texts: []
+  buttonchoices1:
+  - 1
+  - 0
+  - 2
+  buttonchoices2:
+  - 2
+  - 1
+  - 4
+  buttonchoices3:
+  - 3
+  - 3
+  - 6
+  buttonchoices4:
+  - 4
+  - 6
+  - 8
+  buttonchoices5:
+  - 5
+  - 9
+  - 24
+  buttonchoices6:
+  - 10
+  - 30
+  - 984
+  scenarios:
+  - You stop at a park to gather supplies, there are dangers, and the more you go
+    out is the more chance you have of dying, how many times do you go out to scavenge
+    for supplies?
+  - You stop at a motel to gather supplies, there are dangers, and the more you go
+    out is the higher chance you have of dying, but you will get more supplies than
+    any other trip you go on. How many times do you want to scaenge?
+  - You stop at a farm, and there are crops, but you are exposed to natural weather,
+    and that can cause lots of team damage, and the longer you stay is the more vehicle
+    damage you will take, how many hours do you want to stay to gather supplies?
+  MainText: {fileID: 1868622698}
   stage: 0
-  stage0: {fileID: 928055524}
-  stage1: {fileID: 1303601160}
-  stage2: {fileID: 2028881523}
-  stage3: {fileID: 368316619}
-  first: The party stops at a state park and searches for supplies. How many times
-    do you want your party to run over the area to search for supplies?
-  second: The party stops at a motel and your team enters a guest convenience store.
-    Do you want to gather supplies, or rob the store?
-  third: bad
-  fourth: child
-  fifth: literal loser
-  sixth: actual loser
-  seventh: nobody likes you
-  eighth: you're sad
-  ninth: bad.
-  done: 000000000000000000
+  VehicleCondition: 100
+  PO: 100
+  Supplies: 100
+  losars: []
+  loserettes: []
 --- !u!1 &1041021500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,7 +3146,7 @@ GameObject:
   - component: {fileID: 1041021502}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: te5
+  m_TagString: textas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3348,7 +3190,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to Continue
+  m_text: . . .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3439,7 +3281,7 @@ GameObject:
   - component: {fileID: 1082736500}
   - component: {fileID: 1082736503}
   m_Layer: 5
-  m_Name: a_1st char
+  m_Name: Character Card 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3573,6 +3415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fudger: {fileID: 1165560323}
   LoserImoogas: {fileID: 382131613}
+  removera: {fileID: 921872739}
+  removera2: {fileID: 11311448}
   Losertaxes: {fileID: 1106457530}
   ree: []
 --- !u!1 &1086839484
@@ -3605,12 +3449,6 @@ Transform:
   - {fileID: 1807192322}
   - {fileID: 533386433}
   - {fileID: 873977345}
-  - {fileID: 928055525}
-  - {fileID: 1303601161}
-  - {fileID: 2028881524}
-  - {fileID: 368316620}
-  - {fileID: 848034999}
-  - {fileID: 423239877}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3626,7 +3464,7 @@ GameObject:
   - component: {fileID: 1106457533}
   - component: {fileID: 1106457532}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: No character selected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3763,7 +3601,7 @@ GameObject:
   - component: {fileID: 1143650180}
   m_Layer: 5
   m_Name: Button 6
-  m_TagString: 6
+  m_TagString: buton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3785,7 +3623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: -225}
+  m_AnchoredPosition: {x: 300, y: -300}
   m_SizeDelta: {x: 256.26, y: 54.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143650177
@@ -3810,7 +3648,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3832,18 +3670,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2041880755}
-        m_TargetAssemblyTypeName: Event1, Assembly-CSharp
-        m_MethodName: loser
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1143650180}
         m_TargetAssemblyTypeName: SixButton, Assembly-CSharp
         m_MethodName: button6
@@ -3906,47 +3732,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9bbafa24990b042a6c255ab747f8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 999294775}
-  - {fileID: 2076142051}
-  - {fileID: 610261790}
-  - {fileID: 1025743700}
-  - {fileID: 1255934883}
-  - {fileID: 1143650175}
-  texts:
-  - {fileID: 205159605}
-  - {fileID: 479631912}
-  - {fileID: 1375756471}
-  - {fileID: 715008816}
-  - {fileID: 1041021500}
-  - {fileID: 1987030331}
-  TMP_Text_Button:
-  - {fileID: 205159607}
-  - {fileID: 479631914}
-  - {fileID: 1375756473}
-  - {fileID: 715008818}
-  - {fileID: 1041021502}
-  - {fileID: 1987030333}
-  TMPComponent: {fileID: 1868622698}
-  TextStrings: 
+  buttons: []
+  buttonstext: []
+  riskamount: 
+  stringtoint: 
+  texts: []
+  buttonchoices1:
+  - 1
+  - 0
+  - 2
+  buttonchoices2:
+  - 2
+  - 1
+  - 4
+  buttonchoices3:
+  - 3
+  - 3
+  - 6
+  buttonchoices4:
+  - 4
+  - 6
+  - 8
+  buttonchoices5:
+  - 5
+  - 9
+  - 24
+  buttonchoices6:
+  - 10
+  - 30
+  - 984
+  scenarios:
+  - You stop at a park to gather supplies, there are dangers, and the more you go
+    out is the more chance you have of dying, how many times do you go out to scavenge
+    for supplies?
+  - You stop at a motel to gather supplies, there are dangers, and the more you go
+    out is the higher chance you have of dying, but you will get more supplies than
+    any other trip you go on. How many times do you want to scaenge?
+  - You stop at a farm, and there are crops, but you are exposed to natural weather,
+    and that can cause lots of team damage, and the longer you stay is the more vehicle
+    damage you will take, how many hours do you want to stay to gather supplies?
+  MainText: {fileID: 1868622698}
   stage: 0
-  stage0: {fileID: 928055524}
-  stage1: {fileID: 1303601160}
-  stage2: {fileID: 2028881523}
-  stage3: {fileID: 368316619}
-  first: The party stops at a state park and searches for supplies. How many times
-    do you want your party to run over the area to search for supplies?
-  second: The party stops at a motel and your team enters a guest convenience store.
-    Do you want to gather supplies, or rob the store?
-  third: The party stops at a farm, and they are welcomed with a free breakfast and
-    a bed. How long do you plan to stay for?
-  fourth: child
-  fifth: literal loser
-  sixth: actual loser
-  seventh: nobody likes you
-  eighth: you're sad
-  ninth: bad.
-  done: 000000000000000000
+  VehicleCondition: 100
+  PO: 100
+  Supplies: 100
+  losars: []
+  loserettes: []
 --- !u!1 &1165560323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4046,6 +3877,7 @@ MonoBehaviour:
   game:
   - {fileID: 1449526282}
   - {fileID: 1086839484}
+  losera: {fileID: 0}
 --- !u!1 &1255934883
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,8 +3892,8 @@ GameObject:
   - component: {fileID: 1255934885}
   - component: {fileID: 1255934888}
   m_Layer: 5
-  m_Name: Button 5
-  m_TagString: 5
+  m_Name: Button 4
+  m_TagString: buton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4079,11 +3911,11 @@ RectTransform:
   m_Children:
   - {fileID: 1041021501}
   m_Father: {fileID: 1437117756}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: -225}
+  m_AnchoredPosition: {x: -300, y: -300}
   m_SizeDelta: {x: 256.26, y: 54.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255934885
@@ -4108,7 +3940,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4130,21 +3962,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2041880755}
-        m_TargetAssemblyTypeName: Event1, Assembly-CSharp
-        m_MethodName: loser
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1255934888}
         m_TargetAssemblyTypeName: SixButton, Assembly-CSharp
-        m_MethodName: button5
+        m_MethodName: button4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4204,46 +4024,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9bbafa24990b042a6c255ab747f8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 999294775}
-  - {fileID: 2076142051}
-  - {fileID: 610261790}
-  - {fileID: 1025743700}
-  - {fileID: 1255934883}
-  - {fileID: 1143650175}
-  texts:
-  - {fileID: 205159605}
-  - {fileID: 479631912}
-  - {fileID: 1375756471}
-  - {fileID: 715008816}
-  - {fileID: 1041021500}
-  - {fileID: 1987030331}
-  TMP_Text_Button:
-  - {fileID: 205159607}
-  - {fileID: 479631914}
-  - {fileID: 1375756473}
-  - {fileID: 715008818}
-  - {fileID: 1041021502}
-  - {fileID: 1987030333}
-  TMPComponent: {fileID: 1868622698}
-  TextStrings: 
+  buttons: []
+  buttonstext: []
+  riskamount: 
+  stringtoint: 
+  texts: []
+  buttonchoices1:
+  - 1
+  - 0
+  - 2
+  buttonchoices2:
+  - 2
+  - 1
+  - 4
+  buttonchoices3:
+  - 3
+  - 3
+  - 6
+  buttonchoices4:
+  - 4
+  - 6
+  - 8
+  buttonchoices5:
+  - 5
+  - 9
+  - 24
+  buttonchoices6:
+  - 10
+  - 30
+  - 984
+  scenarios:
+  - You stop at a park to gather supplies, there are dangers, and the more you go
+    out is the more chance you have of dying, how many times do you go out to scavenge
+    for supplies?
+  - You stop at a motel to gather supplies, there are dangers, and the more you go
+    out is the higher chance you have of dying, but you will get more supplies than
+    any other trip you go on. How many times do you want to scaenge?
+  - You stop at a farm, and there are crops, but you are exposed to natural weather,
+    and that can cause lots of team damage, and the longer you stay is the more vehicle
+    damage you will take, how many hours do you want to stay to gather supplies?
+  MainText: {fileID: 1868622698}
   stage: 0
-  stage0: {fileID: 928055524}
-  stage1: {fileID: 1303601160}
-  stage2: {fileID: 2028881523}
-  stage3: {fileID: 368316619}
-  first: The party stops at a state park and searches for supplies. How many times
-    do you want your party to run over the area to search for supplies?
-  second: The party stops at a motel and your team enters a guest convenience store.
-    Do you want to gather supplies, or rob the store?
-  third: bad
-  fourth: child
-  fifth: literal loser
-  sixth: actual loser
-  seventh: nobody likes you
-  eighth: you're sad
-  ninth: bad.
-  done: 000000000000000000
+  VehicleCondition: 100
+  PO: 100
+  Supplies: 100
+  losars: []
+  loserettes: []
 --- !u!1 &1289718979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4255,7 +4081,7 @@ GameObject:
   - component: {fileID: 1289718981}
   - component: {fileID: 1289718980}
   m_Layer: 0
-  m_Name: bobb
+  m_Name: Character 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4329,36 +4155,6 @@ Transform:
   m_Father: {fileID: 1449526283}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1303601160
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1303601161}
-  m_Layer: 0
-  m_Name: Motel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1303601161
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303601160}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.30088937, y: 0.116897106, z: -679.7467}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1086839485}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375756471
 GameObject:
   m_ObjectHideFlags: 0
@@ -4372,7 +4168,7 @@ GameObject:
   - component: {fileID: 1375756473}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: te3
+  m_TagString: textas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4416,7 +4212,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to Continue
+  m_text: . . .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4630,8 +4426,8 @@ RectTransform:
   - {fileID: 999294776}
   - {fileID: 2076142052}
   - {fileID: 610261791}
-  - {fileID: 1025743701}
   - {fileID: 1255934884}
+  - {fileID: 1025743701}
   - {fileID: 1143650176}
   - {fileID: 1868622697}
   m_Father: {fileID: 1807192322}
@@ -4730,8 +4526,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 435868393}
   - {fileID: 567542665}
+  - {fileID: 435868393}
   - {fileID: 246392322}
   - {fileID: 404960790}
   - {fileID: 909060739}
@@ -4898,7 +4694,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 23.16, y: 30.88}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5036,12 +4832,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cheuse yur caratar
-
-'
+  m_text: Choose Your Character
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 8b29aaa3eec7468097ff07adfcf29ac9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5336,8 +5130,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808773048}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.018248672, y: -0.016023574, z: 0}
-  m_LocalScale: {x: 0.6884607, y: 0.38075945, z: 1}
+  m_LocalPosition: {x: 0.046, y: 0.852, z: 0}
+  m_LocalScale: {x: 0.18871298, y: 0.1597577, z: 1}
   m_Children: []
   m_Father: {fileID: 909060739}
   m_RootOrder: 2
@@ -5382,12 +5176,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fdd3af800ee8fb24ca605733c9abb8f2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5310d53ec89920c47a0f1b4f9589e50c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 23.16, y: 30.88}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5427,8 +5221,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 570.7, y: -177.8}
-  m_SizeDelta: {x: 2002, y: 756.3}
+  m_AnchoredPosition: {x: 765.2, y: -241.1}
+  m_SizeDelta: {x: 2666.1, y: 1040.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811068314
 MonoBehaviour:
@@ -5450,13 +5244,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '-stupid
-
-    -dub
-
-    -idot
-
-    -child'
+  m_text: '- His great light reflection from the sun causes eye damage and brain
+    damage, he will destroy your future, because he is brighter than your future.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5610,7 +5399,7 @@ GameObject:
   - component: {fileID: 1859923124}
   - component: {fileID: 1859923123}
   m_Layer: 0
-  m_Name: Square (26)
+  m_Name: EmptyScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5716,8 +5505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0015392, y: -84.165}
-  m_SizeDelta: {x: 856.26, y: 76.72}
+  m_AnchoredPosition: {x: 9.51, y: -131.4}
+  m_SizeDelta: {x: 993.74, y: 132.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868622698
 MonoBehaviour:
@@ -5828,8 +5617,8 @@ GameObject:
   - component: {fileID: 1928827403}
   - component: {fileID: 1928827402}
   m_Layer: 5
-  m_Name: Stats (2)
-  m_TagString: Untagged
+  m_Name: Supplies
+  m_TagString: S
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5850,7 +5639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 425, y: 214}
+  m_AnchoredPosition: {x: 276, y: 324}
   m_SizeDelta: {x: 381.53, y: 77.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928827402
@@ -5963,7 +5752,7 @@ GameObject:
   - component: {fileID: 1987030333}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: te6
+  m_TagString: textas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6007,7 +5796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press to Continue
+  m_text: . . .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6097,7 +5886,7 @@ GameObject:
   - component: {fileID: 2000995251}
   - component: {fileID: 2000995250}
   m_Layer: 5
-  m_Name: NoCharSel
+  m_Name: Canvas Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6184,36 +5973,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &2028881523
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2028881524}
-  m_Layer: 0
-  m_Name: Farm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2028881524
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028881523}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.30088937, y: 0.116897106, z: -679.7467}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1086839485}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2041880751
 GameObject:
   m_ObjectHideFlags: 0
@@ -6225,7 +5984,6 @@ GameObject:
   - component: {fileID: 2041880754}
   - component: {fileID: 2041880753}
   - component: {fileID: 2041880752}
-  - component: {fileID: 2041880755}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6298,47 +6056,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2041880755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041880751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109be247aba823e40b722331ee1db1b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 999294775}
-  - {fileID: 2076142051}
-  - {fileID: 610261790}
-  - {fileID: 1025743700}
-  - {fileID: 1255934883}
-  - {fileID: 1143650175}
-  texts:
-  - {fileID: 205159605}
-  - {fileID: 479631912}
-  - {fileID: 1375756471}
-  - {fileID: 715008816}
-  - {fileID: 1041021500}
-  - {fileID: 1987030331}
-  TMP_Text_Button:
-  - {fileID: 205159607}
-  - {fileID: 479631914}
-  - {fileID: 1375756473}
-  - {fileID: 1375756473}
-  - {fileID: 1041021502}
-  - {fileID: 1987030333}
-  TMPComponent: {fileID: 1868622698}
-  TextStrings: 
-  stage: 0
-  stage0: {fileID: 368316619}
-  stage1: {fileID: 928055524}
-  stage2: {fileID: 2028881523}
-  stage3: {fileID: 1303601160}
-  happened: 0
 --- !u!1 &2072441424
 GameObject:
   m_ObjectHideFlags: 0
@@ -6436,7 +6153,7 @@ GameObject:
   - component: {fileID: 2076142056}
   m_Layer: 5
   m_Name: Button 2
-  m_TagString: 2
+  m_TagString: buton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6458,7 +6175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -150}
+  m_AnchoredPosition: {x: 0, y: -225}
   m_SizeDelta: {x: 256.26, y: 54.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076142053
@@ -6483,7 +6200,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.66, g: 0.66, b: 0.66, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6505,18 +6222,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2041880755}
-        m_TargetAssemblyTypeName: Event1, Assembly-CSharp
-        m_MethodName: loser
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2076142056}
         m_TargetAssemblyTypeName: SixButton, Assembly-CSharp
         m_MethodName: button2
@@ -6579,43 +6284,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b9bbafa24990b042a6c255ab747f8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 999294775}
-  - {fileID: 2076142051}
-  - {fileID: 610261790}
-  - {fileID: 1025743700}
-  - {fileID: 1255934883}
-  - {fileID: 1143650175}
-  texts:
-  - {fileID: 205159605}
-  - {fileID: 479631912}
-  - {fileID: 1375756471}
-  - {fileID: 715008816}
-  - {fileID: 1041021500}
-  - {fileID: 1987030331}
-  TMP_Text_Button:
-  - {fileID: 205159607}
-  - {fileID: 479631914}
-  - {fileID: 1375756473}
-  - {fileID: 715008818}
-  - {fileID: 1041021502}
-  - {fileID: 1987030333}
-  TMPComponent: {fileID: 1868622698}
-  TextStrings: 
+  buttons: []
+  buttonstext: []
+  riskamount: 
+  stringtoint: 
+  texts: []
+  buttonchoices1:
+  - 1
+  - 0
+  - 2
+  buttonchoices2:
+  - 2
+  - 1
+  - 4
+  buttonchoices3:
+  - 3
+  - 3
+  - 6
+  buttonchoices4:
+  - 4
+  - 6
+  - 8
+  buttonchoices5:
+  - 5
+  - 9
+  - 24
+  buttonchoices6:
+  - 10
+  - 30
+  - 984
+  scenarios:
+  - You stop at a park to gather supplies, there are dangers, and the more you go
+    out is the more chance you have of dying, how many times do you go out to scavenge
+    for supplies?
+  - You stop at a motel to gather supplies, there are dangers, and the more you go
+    out is the higher chance you have of dying, but you will get more supplies than
+    any other trip you go on. How many times do you want to scaenge?
+  - You stop at a farm, and there are crops, but you are exposed to natural weather,
+    and that can cause lots of team damage, and the longer you stay is the more vehicle
+    damage you will take, how many hours do you want to stay to gather supplies?
+  MainText: {fileID: 1868622698}
   stage: 0
-  stage0: {fileID: 928055524}
-  stage1: {fileID: 1303601160}
-  stage2: {fileID: 2028881523}
-  stage3: {fileID: 368316619}
-  first: The party stops at a state park and searches for supplies. How many times
-    do you want your party to run over the area to search for supplies?
-  second: The party stops at a motel and your team enters a guest convenience store.
-    Do you want to gather supplies, or rob the store?
-  third: bad
-  fourth: child
-  fifth: literal loser
-  sixth: actual loser
-  seventh: nobody likes you
-  eighth: you're sad
-  ninth: bad.
-  done: 000000000000000000
+  VehicleCondition: 100
+  PO: 100
+  Supplies: 100
+  losars: []
+  loserettes: []
