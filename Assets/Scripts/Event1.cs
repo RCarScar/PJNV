@@ -36,10 +36,10 @@ public class Event1 : MonoBehaviour
             TextStrings = TMPComponent.text;
         }
         //grabbing six buttons here
-        for(int i = 1; i <= 6; i++)
+        for(int i = 1; i <= buttons.Length; i++)
         {
             buttons[i - 1] = GameObject.FindGameObjectWithTag(i.ToString());
-            Debug.Log(i.ToString());
+            Debug.Log(i.ToString() + " " + buttons.Length);
         }
         //loop through all 6 texts, set the text to an array.
        /* for (int i = 1; i <= 6; i++)
