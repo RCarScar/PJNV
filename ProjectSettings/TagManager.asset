@@ -17,6 +17,12 @@ TagManager:
   - te4
   - te5
   - te6
+  - check
+  - buton
+  - textas
+  - VC
+  - PO
+  - S
   layers:
   - Default
   - TransparentFX

@@ -11,10 +11,12 @@ public class Moemoebackgroundo : MonoBehaviour
 {
     public bool agentselected = false;
     public GameObject[] game;
+    public GameObject losera;
     // Start is called before the first frame update
     void Start()
     {
-        
+        losera = GameObject.FindGameObjectWithTag("check");
+        losera.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,8 +27,10 @@ public class Moemoebackgroundo : MonoBehaviour
 
     public void loserette()
     {
-
+        if (losera.activeInHierarchy == true)
+        {
             game[0].SetActive(false);
             game[1].SetActive(true);
+        }
     }
 }
