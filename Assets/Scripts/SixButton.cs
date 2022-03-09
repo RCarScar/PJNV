@@ -26,7 +26,7 @@ public class SixButton : MonoBehaviour
     public string seventh = "nobody likes you";
     public string eighth = "you're sad";
     public string ninth = "bad.";
-    public bool[] done = { false, false, false, false, false, false, false, false, false, };
+    public bool[] done;
     // Start is called before the first frame update
     void Start()
     {
