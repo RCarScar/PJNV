@@ -22,6 +22,7 @@ public class Event1 : MonoBehaviour
     public GameObject stage1;
     public GameObject stage2;
     public GameObject stage3;
+    public bool happened = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +53,7 @@ public class Event1 : MonoBehaviour
     public void loser()
     {
         //if the text is this,
-        if (TMPComponent.text == "Game has Started, click the first box to continue")
+        if (TMPComponent.text == "Game has Started, click the first box to continue" && happened == false)
         {
             //set the text to this.
             TMPComponent.text = "The party stops at a state park and searches for supplies. How many times do you want your party to run over the area to search for supplies?";
@@ -62,6 +63,7 @@ public class Event1 : MonoBehaviour
                 TMP_Text_Button[i] = texts[i].GetComponent<TMP_Text>();
                 TMP_Text_Button[i].text = i.ToString();
             }
+            happened = true;
         }
         //if the text is this,
         /*else if (TMPComponent.text == "The party stops at a state park and searches for supplies. How many times do you want your party to run over the area to search for supplies?")

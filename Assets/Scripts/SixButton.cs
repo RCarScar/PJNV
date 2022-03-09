@@ -1,3 +1,8 @@
+/***********************************
+ * Ryan Chen
+ * March 4th
+ * Event Handler, makes events progress
+ * ********************************/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -111,11 +116,15 @@ public class SixButton : MonoBehaviour
     }
     public void button1()
     {
+        //set the button to it's value. The button is 0, so the array number is 0.
         int number = 0;
-        if (stage == 1) TMP_Text_Button[number].GetComponent<TMP_Text>().text = ("1");
-        if (stage == 2)
+        if (stage == 1)
         {
             TMP_Text_Button[number].GetComponent<TMP_Text>().text = ("beg");
+        }
+        if (stage == 2)
+        {
+            TMP_Text_Button[number].GetComponent<TMP_Text>().text = ("");
             TMPComponent.text = third;
         }
         if (stage == 3)
@@ -132,8 +141,12 @@ public class SixButton : MonoBehaviour
     }
     public void button2()
     {
+        //set the button to its value. The button value is 1. So the array number is 1. 
         int number = 1;
-        if (stage == 1) TMP_Text_Button[number].GetComponent<TMP_Text>().text = ("2");
+        if (stage == 1)
+        {
+            TMP_Text_Button[number].GetComponent<TMP_Text>().text = ("steal");
+        }
         if (stage == 2)
         {
             TMP_Text_Button[number].GetComponent<TMP_Text>().text = ("steal");
@@ -153,8 +166,12 @@ public class SixButton : MonoBehaviour
     }
     public void button3()
     {
+        //set the button to its value. The button value is 2. So the array number is 2. 
         int number = 2;
-        if (stage == 1) TMP_Text_Button[number].GetComponent<TMP_Text>().text = ("3");
+        if (stage == 1)
+        {
+            TMP_Text_Button[number].GetComponent<TMP_Text>().text = (". . .");
+        }
         if (stage == 2)
         {
             TMP_Text_Button[number].GetComponent<TMP_Text>().text = (". . .");
@@ -174,6 +191,7 @@ public class SixButton : MonoBehaviour
     }
     public void button4()
     {
+        //set the button to its value. The button value is 1. So the array number is 3. 
         int number = 3;
         if (stage == 1) TMP_Text_Button[number].GetComponent<TMP_Text>().text = ("4");
         if (stage == 2)
@@ -195,6 +213,7 @@ public class SixButton : MonoBehaviour
     }
     public void button5()
     {
+        //set the button to its value. The button value is 1. So the array number is 4. 
         int number = 4;
         if (stage == 1) TMP_Text_Button[number].GetComponent<TMP_Text>().text = (". . .");
         if (stage == 2)
@@ -216,6 +235,7 @@ public class SixButton : MonoBehaviour
     }
     public void button6()
     {
+        //set the button to its value. The button value is 1. So the array number is 5. 
         int number = 5;
         if (stage == 1) TMP_Text_Button[number].GetComponent<TMP_Text>().text = (". . .");
         if (stage == 2)
