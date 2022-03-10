@@ -16,9 +16,9 @@ public class SixButton : MonoBehaviour
     public float VehicleCondition = 100;
     public float PO = 100;
     public float Supplies = 100;
-    public TextMeshProUGUI[] texts;
-    public TextMeshProUGUI MainText;
-    public TextMeshProUGUI[] loserettes;
+    public List<TMP_Text> texts;
+    public TMP_Text MainText;
+    public TMP_Text[] loserettes;
     public GameObject[] losars;
     public GameObject[] buttons;
     public GameObject[] buttonstext;
@@ -36,26 +36,32 @@ public class SixButton : MonoBehaviour
     void Start()
     {
         //setting all the array sizes, so no errors appear.
-        texts = new TextMeshProUGUI[buttonstext.Length];
-        loserettes = new TextMeshProUGUI[3];
+       
+        loserettes = new TMP_Text[3];
+        losars = new GameObject[3];
         stringtoint = new int[buttonchoices1.Length];
+
         //setting all the arrays sizes and matching them with the correct gameobjects.
-        buttons = GameObject.FindGameObjectsWithTag("buton");
         buttonstext = GameObject.FindGameObjectsWithTag("textas");
+        buttons = GameObject.FindGameObjectsWithTag("buton");
         losars[0] = GameObject.FindGameObjectWithTag("VC");
         losars[1] = GameObject.FindGameObjectWithTag("PO");
         losars[2] = GameObject.FindGameObjectWithTag("S");
-        loserettes[0] = losars[0].GetComponent<TextMeshProUGUI>();
-        loserettes[1] = losars[1].GetComponent<TextMeshProUGUI>();
-        loserettes[2] = losars[2].GetComponent<TextMeshProUGUI>();
+
+        //find components of the gameobjects.
+        loserettes[0] = losars[0].GetComponent<TMP_Text>();
+        loserettes[1] = losars[1].GetComponent<TMP_Text>();
+        loserettes[2] = losars[2].GetComponent<TMP_Text>();
+
         //gets the components of all of the guis,
         for (int i = 0; i < buttonstext.Length; i++)
         {
-            texts[i] = buttonstext[i].GetComponent<TextMeshProUGUI>();
+            
+            texts.Add( buttonstext[i].GetComponent<TMP_Text>());
         }
         if(stage == 0)
         {
-            MainText.GetComponent<TextMeshProUGUI>().text = "The game has started, click any box when you are ready to start.";
+            MainText.GetComponent<TMP_Text>().text = "The game has started, click any box when you are ready to start.";
         }
     }
 
@@ -63,10 +69,11 @@ public class SixButton : MonoBehaviour
     void Update()
     {
         Debug.Log(loserettes.Length.ToString());
-        Debug.Log(loserettes[1].tag);
+        //Debug.Log(loserettes[1].tag);
         loserettes[0].text = "Vehicle Condition: " + VehicleCondition.ToString();
         loserettes[1].text = "Public Opinion: " + PO.ToString();
         loserettes[2].text = "Supplies: " + Supplies.ToString();
+        Debug.Log("Vehicle Condition" + VehicleCondition.ToString() + "Public Opinion: " + PO.ToString() + "Supplies: " + Supplies);
 
         
         if(stage > scenarios.Length)
@@ -133,7 +140,7 @@ public class SixButton : MonoBehaviour
     {
         stringtoint[stage - 1] = 0;
         stage += 1;
-        MainText.GetComponent<TextMeshProUGUI>().text = scenarios[stage - 1];
+        MainText.GetComponent<TMP_Text>().text = scenarios[stage - 1];
         texts[0].text = buttonchoices1[stage - 1];
         texts[1].text = buttonchoices2[stage - 1];
         texts[2].text = buttonchoices3[stage - 1];
