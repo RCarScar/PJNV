@@ -32,7 +32,6 @@ public class SixButton : MonoBehaviour
     public int stage = 0;
     public int[] riskamount;
     public int[] stringtoint;
-    public GameObject[] backgrounds;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +47,6 @@ public class SixButton : MonoBehaviour
         losars[0] = GameObject.FindGameObjectWithTag("VC");
         losars[1] = GameObject.FindGameObjectWithTag("PO");
         losars[2] = GameObject.FindGameObjectWithTag("S");
-        backgrounds = GameObject.FindGameObjectsWithTag("bg");
 
         //find components of the gameobjects.
         loserettes[0] = losars[0].GetComponent<TMP_Text>();
@@ -87,7 +85,7 @@ public class SixButton : MonoBehaviour
     public void button1()
     {
         stage2(0);
-        if (stage >= 1 && stage <= scenarios.Length)
+        if (stage >= 1 && stage >= scenarios.Length)
         {
             stringtoint[stage - 1] = int.Parse(buttonchoices1[stage - 1]);
             Debug.Log(stringtoint[stage - 1]);
@@ -96,7 +94,7 @@ public class SixButton : MonoBehaviour
     public void button2()
     {
         stage2(1);
-        if (stage >= 1 && stage <= scenarios.Length)
+        if (stage >= 1 && stage >= scenarios.Length)
         {
             stringtoint[stage - 1] = int.Parse(buttonchoices2[stage - 1]);
             Debug.Log(stringtoint[stage - 1]);
@@ -105,7 +103,7 @@ public class SixButton : MonoBehaviour
     public void button3()
     {
         stage2(2);
-        if (stage >= 1 && stage <= scenarios.Length)
+        if (stage >= 1 && stage >= scenarios.Length)
         {
             stringtoint[stage - 1] = int.Parse(buttonchoices3[stage - 1]);
             Debug.Log(stringtoint[stage - 1]);
@@ -114,7 +112,7 @@ public class SixButton : MonoBehaviour
     public void button4()
     {
         stage2(3);
-        if (stage >= 1 && stage <= scenarios.Length)
+        if (stage >= 1 && stage >= scenarios.Length)
         {
             stringtoint[stage - 1] = int.Parse(buttonchoices4[stage - 1]);
             Debug.Log(stringtoint[stage - 1]);
@@ -123,7 +121,7 @@ public class SixButton : MonoBehaviour
     public void button5()
     {
         stage2(4);
-        if (stage >= 1 && stage <= scenarios.Length)
+        if (stage >= 1 && stage >= scenarios.Length)
         {
             stringtoint[stage - 1] = int.Parse(buttonchoices5[stage - 1]);
             Debug.Log(stringtoint[stage - 1]);
@@ -132,7 +130,7 @@ public class SixButton : MonoBehaviour
     public void button6()
     {
         stage2(5);
-        if (stage >= 1 && stage <= scenarios.Length)
+        if (stage >= 1 && stage >= scenarios.Length)
         {
             stringtoint[stage - 1] = int.Parse(buttonchoices6[stage - 1]);
             Debug.Log(stringtoint[stage - 1]);
@@ -140,17 +138,14 @@ public class SixButton : MonoBehaviour
     }
     private void stage2(int loser)
     {
+        stringtoint[stage - 1] = 0;
         stage += 1;
-        if (stage <= scenarios.Length && stage > 0)
-        {
-            stringtoint[stage - 1] = 0;
-            MainText.GetComponent<TMP_Text>().text = scenarios[stage - 1];
-            texts[0].text = buttonchoices1[stage - 1];
-            texts[1].text = buttonchoices2[stage - 1];
-            texts[2].text = buttonchoices3[stage - 1];
-            texts[3].text = buttonchoices4[stage - 1];
-            texts[4].text = buttonchoices5[stage - 1];
-            texts[5].text = buttonchoices6[stage - 1];
-        }
+        MainText.GetComponent<TMP_Text>().text = scenarios[stage - 1];
+        texts[0].text = buttonchoices1[stage - 1];
+        texts[1].text = buttonchoices2[stage - 1];
+        texts[2].text = buttonchoices3[stage - 1];
+        texts[3].text = buttonchoices4[stage - 1];
+        texts[4].text = buttonchoices5[stage - 1];
+        texts[5].text = buttonchoices6[stage - 1];
     }
 }

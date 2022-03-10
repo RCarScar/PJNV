@@ -23,7 +23,6 @@ TagManager:
   - VC
   - PO
   - S
-  - bg
   layers:
   - Default
   - TransparentFX

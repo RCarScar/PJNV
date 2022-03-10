@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage1.unity
     guid: 44efcf06e01a5704c9199bfaf94680e3
   - enabled: 1
-    path: Assets/Scenes/EndScreen.unity
-    guid: 92325d5b1f60c6e4d8a27d5db5ffc900
-  - enabled: 1
     path: Assets/Scenes/OptionScreen.unity
     guid: f6b5bec3e0b66b04cb92a5385e450244
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 92325d5b1f60c6e4d8a27d5db5ffc900
   m_configObjects: {}
