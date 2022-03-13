@@ -58,7 +58,7 @@ public class SixButton : MonoBehaviour
         for (int i = 0; i < buttonstext.Length; i++)
         {
             
-            texts.Add( buttonstext[i].GetComponent<TMP_Text>());
+            texts.Add(buttonstext[i].GetComponent<TMP_Text>());
         }
         if(stage == 0)
         {
@@ -79,7 +79,7 @@ public class SixButton : MonoBehaviour
 
         if (stage >= scenarios.Length + 1)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else if (stage == 1)
         {
@@ -96,6 +96,10 @@ public class SixButton : MonoBehaviour
         else if(stage == 4)
         {
             backgrounds[2].SetActive(false);
+        }
+        else if(stage == 5)
+        {
+            stage = 4;
         }
 
     }
@@ -131,12 +135,15 @@ public class SixButton : MonoBehaviour
             //set stage to the next, and then 
             stage += 1;
             MainText.GetComponent<TMP_Text>().text = scenarios[stage - 2];
-            texts[0].text = buttonchoices1[stage - 1];
-            texts[1].text = buttonchoices2[stage - 2];
-            texts[2].text = buttonchoices3[stage - 2];
-            texts[3].text = buttonchoices4[stage - 2];
-            texts[4].text = buttonchoices5[stage - 2];
-            texts[5].text = buttonchoices6[stage - 2];
+            if (stage - 2 < buttonchoices1.Length)
+            {
+                texts[0].text = buttonchoices1[stage - 2];
+                texts[1].text = buttonchoices2[stage - 2];
+                texts[2].text = buttonchoices3[stage - 2];
+                texts[3].text = buttonchoices4[stage - 2];
+                texts[4].text = buttonchoices5[stage - 2];
+                texts[5].text = buttonchoices6[stage - 2];
+            }
         }
     }
 }
