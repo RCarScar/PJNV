@@ -66,7 +66,11 @@ public class MusicPlayer : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name == LT.LevelName)
             {
-                if (myAud.clip == null || myAud.clip.name != LT.Music.name)
+                if(LT.Music == null)
+                {
+                    myAud.Stop();
+                }
+                else if (myAud.clip == null || myAud.clip.name != LT.Music.name)
                 {
                     myAud.Stop();
                     if (LT.Intro != null)
@@ -80,7 +84,10 @@ public class MusicPlayer : MonoBehaviour
                         myAud.clip = LT.Music;
                         myAud.loop = true;
                     }
-                    myAud.Play();
+                    if (myAud.clip != null)
+                    {
+                        myAud.Play();
+                    }
                 }
             }
         }
