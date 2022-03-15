@@ -2463,7 +2463,7 @@ MonoBehaviour:
     Music: {fileID: 8300000, guid: 54f58b86c14d50942861df4fb9c0af96, type: 3}
   - LevelName: Stage1
     Intro: {fileID: 0}
-    Music: {fileID: 0}
+    Music: {fileID: 8300000, guid: e636bc52841428f4a8ab75aed317be17, type: 3}
   - LevelName: EndScreen
     Intro: {fileID: 8300000, guid: 4016398e9896be94cb149380df5ebb73, type: 3}
     Music: {fileID: 8300000, guid: eeb1138d29b34464e8fbc3d8d79c5872, type: 3}
